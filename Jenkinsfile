@@ -9,7 +9,9 @@ node {
         app = docker.build("rrweb_dev:${env.BUILD_ID}")
     }
 
-    stage('run') {
-        docker.image('rrweb_dev:${env.BUILD_ID}').withRun('-p 5173:5173')
+    stage('push') {
+        docker.withRegistry('https://gitea.caffeinatedope.com/jenkins/', 'gitea') {
+            app.push();
+        }
     }
 }
