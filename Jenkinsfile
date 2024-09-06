@@ -9,9 +9,7 @@ node {
         app = docker.build("rrweb_dev:${env.BUILD_ID}")
     }
 
-    stage('push') {
-        docker.withRegistry('https://gitea.caffeinatedope.com', 'gitea') {
-            app.push();
-        }
+    stage('run') {
+        docker.image('rrweb_dev:${env.BUILD_ID}').withRun('-p 5173:5173')
     }
 }
