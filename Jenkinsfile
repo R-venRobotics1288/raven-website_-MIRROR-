@@ -15,11 +15,11 @@ node {
         }
     }
     stage('kill prev') {
-
+        sh 'docker kill rrweb_dev'
     }
     stage('run') {
         docker.withRegistry('https://gitea.caffeinatedope.com/') {
-            docker.image("jenkins/rrweb_dev:${env.BUILD_ID}").run("-p 5173:5173 --name rrweb-dev -d -rm")
+            docker.image("jenkins/rrweb_dev:${env.BUILD_ID}").run("-p 5173:5173 --name rrweb-dev -d")
         }
     }
 }
