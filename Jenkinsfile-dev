@@ -28,7 +28,7 @@ node {
     }
     stage('run') {
         docker.withRegistry('https://gitea.caffeinatedope.com/') {
-            docker.image("jenkins/rrweb_dev:${env.BUILD_ID}").run("-p 1289:3000 --name rrweb_dev -d --rm -e HOST:dev.ravenrobotics.org")
+            docker.image("jenkins/rrweb_dev:${env.BUILD_ID}").run("-p 1289:3000 --name rrweb_dev -d --rm -e ORIGIN=dev.ravenrobotics.org")
         }
     }
 }
