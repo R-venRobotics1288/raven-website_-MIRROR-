@@ -23,7 +23,7 @@ node {
     }
     stage('run') {
         docker.withRegistry('https://gitea.caffeinatedope.com/') {
-            docker.image("jenkins/rrweb:${env.BUILD_ID}").run("-p 5000:5000 --name rrweb-dev -d --rm")
+            docker.image("jenkins/rrweb:${env.BUILD_ID}").run("-p 1288:3000 --name rrweb-dev -d --rm")
         }
     }
 }

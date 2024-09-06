@@ -3,9 +3,8 @@ WORKDIR /app
 COPY package*.json ./
 COPY *config.js ./
 RUN npm install
-COPY ./src/ ./src/
-COPY ./public/ ./public/
-EXPOSE 5000
+COPY . ./
+EXPOSE 3000
 RUN npm build
 ENV HOST=0.0.0.0
-CMD ["npm", "start"]
+CMD ["node", "./build/index.js"]
