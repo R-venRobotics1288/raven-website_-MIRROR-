@@ -7,6 +7,6 @@ COPY . ./
 EXPOSE 3000
 ENV PROTOCOL_HEADER=x-forwarded-proto
 ENV HOST_HEADER=x-forwarded-host
-RUN node build
+RUN npm run build
 ENV HOST=0.0.0.0
 CMD ["node", "./build/index.js"]
