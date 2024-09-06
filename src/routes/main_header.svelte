@@ -5,10 +5,12 @@
     if(browser){
         const darkmodequery = window.matchMedia('(prefers-color-scheme: dark)');
         console.log(darkmodequery);
-        if (darkmodequery.matches) {
+        if (darkmodequery.matches === true) {
             let src = '/src/routes/raven_dark.png';
             let color = 'dark';
+            console.log("dark");
         } else {
+            console.log("light");
             let src = '/src/routes/raven_light.png';
             let color = 'light';
         }

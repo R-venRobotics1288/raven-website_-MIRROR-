@@ -1,10 +1,11 @@
-pipeline {
-    agent any 
-    stages {
-        stage('Stage 1') {
-            steps {
-                echo 'it works' 
-            }
-        }
+node {
+    def app
+
+    stage('clone') {
+        checkout scm
+    }
+
+    stage('build') {
+        app = docker.build("rrweb_dev:${env.BUILD_ID}")
     }
 }
