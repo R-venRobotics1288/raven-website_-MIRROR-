@@ -14,4 +14,9 @@ node {
             app.push();
         }
     }
+    stage('run') {
+        docker.withRegistry('https://gitea.caffeinatedope.com/', 'gitea') {
+            docker.image("jenkins/rrweb_dev:latest").run("-p 5173:5173" + "-d")
+        }
+    }
 }
