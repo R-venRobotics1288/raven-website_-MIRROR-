@@ -8,4 +8,8 @@ node {
     stage('build') {
         app = docker.build("rrweb_dev:${env.BUILD_ID}")
     }
+
+    stage('push') {
+        
+    }
 }
