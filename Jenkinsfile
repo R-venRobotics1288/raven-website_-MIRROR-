@@ -6,11 +6,11 @@ node {
     }
 
     stage('build') {
-        app = docker.build("rrweb_dev:${env.BUILD_ID}")
+        app = docker.build("jenkins/rrweb_dev:${env.BUILD_ID}")
     }
 
     stage('push') {
-        docker.withRegistry('https://gitea.caffeinatedope.com/jenkins/', 'gitea') {
+        docker.withRegistry('https://gitea.caffeinatedope.com/', 'gitea') {
             app.push();
         }
     }
