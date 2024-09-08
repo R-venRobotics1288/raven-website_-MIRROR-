@@ -1,17 +1,19 @@
 <script>
     import { browser } from '$app/environment';
-    let src = '/src/routes/raven_dark.png'; 
+    import light from '$lib/assets/raven_light.png';
+    import dark from '$lib/assets/raven_dark.png';
+    let src = dark; 
     let color = 'dark';
     if(browser){
         const darkmodequery = window.matchMedia('(prefers-color-scheme: dark)');
         console.log(darkmodequery);
         if (darkmodequery.matches === true) {
-            let src = '/src/routes/raven_dark.png';
+            let src = dark;
             let color = 'dark';
             console.log("dark");
         } else {
             console.log("light");
-            let src = '/src/routes/raven_light.png';
+            let src = light;
             let color = 'light';
         }
     }
