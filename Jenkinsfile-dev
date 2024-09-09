@@ -16,11 +16,6 @@ node {
     }
     stage('kill prev') {
         try {
-            sh 'docker kill rrweb-dev'
-        } catch(err) {
-            echo "container not running"
-        }
-        try {
             sh 'docker kill rrweb_dev'
         } catch(err) {
             echo "container not running"
