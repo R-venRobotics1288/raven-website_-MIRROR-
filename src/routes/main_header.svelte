@@ -8,16 +8,16 @@
     <a href="/"><img src={dark_raven} alt="Dark Raven Robotics logo" width="100px" class="dark_raven"/></a>
     <div class="nav">
         <div class="nav-child">
-            <a href="/about">about</a>
+            <a href="/about" class="nav-child-text">About</a>
         </div>
         <div class="nav-child">
-            <a href="/about">about</a>
+            <a href="/" class="nav-child-text">tmp</a>
         </div>
         <div class="nav-child">
-            <a href="/about">about</a>
+            <a href="/" class="nav-child-text">tmp</a>
         </div>
         <div class="nav-child">
-            <a href="/about">about</a>
+            <a href="/" class="nav-child-text">tmp</a>
         </div>
     </div>
 </div>
@@ -49,9 +49,18 @@
         display: none;
     }
     .nav {
-        background-color: aliceblue;
+        display: flex;
+        flex-grow: 4;
     }
     .nav-child {
-        background-color: aqua;
-;    }
+        justify-content: center;
+        flex-grow: 4;
+        display: flex;
+        color: inherit;
+        text-decoration: none;
+    }
+    .nav-child-text {
+        text-decoration: none;
+        color: inherit;
+    }
 </style>
