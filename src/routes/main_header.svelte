@@ -4,36 +4,40 @@
 </script>
 
 <div class="custom_header">
-    <a href="/"><img src={light_raven} alt="Light Raven Robotics logo" height="100px" class = "light_raven"/></a>
-    <a href="/"><img src={dark_raven} alt="Dark Raven Robotics logo" height="100px" class="dark_raven"/></a>
+    <a href="/"><img src={light_raven} alt="Light Raven Robotics logo" width="100px" class = "light_raven"/></a>
+    <a href="/"><img src={dark_raven} alt="Dark Raven Robotics logo" width="100px" class="dark_raven"/></a>
+    <div class="nav">
+        <p>
+            <a href="/about">About</a>
+        </p>
+    </div>
 </div>
 
 <style>
     .custom_header{
-        height: 100px;
+        height: fit-content;
         width: 100%;
-        padding: 0%;
+        padding: 5px;
         margin: 0%;
+        position: fixed;
     }
     :global(body.dark) .custom_header{
-        height: 100px;
-        width: 100%;
         background-color: black;
-        padding: 0%;
-        margin: 0%;
     }
     :global(body.light) .custom_header{
-        height: 100px;
-        width: 100%;
         background-color: #652d92;
-        padding: 0%;
-        margin: 0%;
     }
-
+    img {
+        display: block;
+        float: left;
+    }
     :global(body.light) .dark_raven {
         display: none;
     }
     :global(body.dark) .light_raven {
         display: none;
+    }
+    .nav {
+        margin-left: 115px;
     }
 </style>
