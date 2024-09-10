@@ -7,19 +7,29 @@
     <a href="/"><img src={light_raven} alt="Light Raven Robotics logo" width="100px" class = "light_raven"/></a>
     <a href="/"><img src={dark_raven} alt="Dark Raven Robotics logo" width="100px" class="dark_raven"/></a>
     <div class="nav">
-        <p>
-            <a href="/about">About</a>
-        </p>
+        <div class="nav-child">
+            <a href="/about">about</a>
+        </div>
+        <div class="nav-child">
+            <a href="/about">about</a>
+        </div>
+        <div class="nav-child">
+            <a href="/about">about</a>
+        </div>
+        <div class="nav-child">
+            <a href="/about">about</a>
+        </div>
     </div>
 </div>
 
 <style>
     .custom_header{
-        height: fit-content;
-        width: 100%;
-        padding: 5px;
+        top: 0;
+        display: flex;
+        padding: 0;
         margin: 0%;
-        position: fixed;
+        position: sticky;
+        align-items: center;
     }
     :global(body.dark) .custom_header{
         background-color: black;
@@ -30,6 +40,7 @@
     img {
         display: block;
         float: left;
+        margin: 5px;
     }
     :global(body.light) .dark_raven {
         display: none;
@@ -38,6 +49,9 @@
         display: none;
     }
     .nav {
-        margin-left: 115px;
+        background-color: aliceblue;
     }
+    .nav-child {
+        background-color: aqua;
+;    }
 </style>

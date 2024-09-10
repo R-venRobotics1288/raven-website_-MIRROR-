@@ -83,7 +83,7 @@
 </body> 
 <style>
     :global(body.dark) body {
-        background-color: #202020;
+        background-color: #101010;
         color: #9966cc;
     }
 </style>
