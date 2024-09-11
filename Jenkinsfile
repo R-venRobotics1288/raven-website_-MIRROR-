@@ -10,7 +10,8 @@ node {
     }
 
     stage('push') {
-        docker.withRegistry('https://gitea.caffeinatedope.com/', 'gitea') {
+        docker.withRegistry('http://192.168.5.162:3000', 'gitea') {
+            //had to push via internal ip, as the upload size was too much for cloudflare
             app.push();
         }
     }
