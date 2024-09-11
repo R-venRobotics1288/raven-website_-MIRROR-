@@ -8,16 +8,16 @@
     <a href="/"><img src={dark_raven} alt="Dark Raven Robotics logo" width="100px" class="dark_raven"/></a>
     <div class="nav">
         <div class="nav-child">
-            <a href="/about" class="nav-child-text">About</a>
+            <a href="/tmp" class="nav-child-text">tmp</a>
         </div>
         <div class="nav-child">
-            <a href="/" class="nav-child-text">tmp</a>
+            <a href="/tmp" class="nav-child-text">tmp</a>
         </div>
         <div class="nav-child">
-            <a href="/" class="nav-child-text">tmp</a>
+            <a href="/tmp" class="nav-child-text">tmp</a>
         </div>
         <div class="nav-child">
-            <a href="/" class="nav-child-text">tmp</a>
+            <a href="/tmp" class="nav-child-text">tmp</a>
         </div>
     </div>
 </div>
