@@ -5,12 +5,14 @@
 
 <body>
     <Main_Header/>
-    <div class="styled_paragraph">
-        <h1>We are Raven Robotics</h1>
+    <div class="title">
+        <div class='title-text'>
+            <h1>We are Raven Robotics</h1>
+        </div>
     </div>
     <div style="margin: 3%;">
         <div class="box">
-            <div class="image_left"><enhanced:img src='$lib/assets/IMG_3700.jpg' alt='tmp logo' class="images"/></div>
+            <div class="image_left"><enhanced:img src='$lib/assets/IMG_3829.jpg' alt='tmp logo' class="images"/></div>
             <div class="text_right">lorem ipsum dolor amit somethign somwthing something something ;djfn lasjdfnl nasfdakjsdfasn asdfkjskfn asldf</div>
         </div>
         <div class="box">
@@ -19,7 +21,6 @@
         </div>
     </div>
 </body>
-
 <style>
     .box {
         display: flex;
@@ -60,5 +61,29 @@
         float: right;
         display: flex;
         flex-grow: 1;
+    }
+    .title {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        font-size: 30pt;
+        margin: 0px;
+        background-image: url('$lib/assets/IMG_3788.jpg');
+        background-attachment: fixed;
+        background-size: auto;
+            background-size: 100%;
+    }
+    :global(body.dark) .title-text{
+        display: flex;
+        flex-shrink: 0;
+        background-color: black;
+        margin: 10px;
+        padding: 10px;
+    }
+    h1 {
+        margin: 0;
+        padding: 0;
     }
 </style>
