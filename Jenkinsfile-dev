@@ -10,7 +10,7 @@ node {
     }
 
     stage('push') {
-        docker.withRegistry('https://gitea.caffeinatedope.com/', 'gitea') {
+        docker.withRegistry('https://gitea/', 'gitea') {
             app.push();
         }
     }
