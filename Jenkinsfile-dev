@@ -9,11 +9,6 @@ node {
         app = docker.build("jenkins/rrweb_dev:${env.BUILD_ID}")
     }
 
-    stage('push') {
-        docker.withRegistry('https://gitea/', 'gitea') {
-            app.push();
-        }
-    }
     stage('kill prev') {
         try {
             sh 'docker kill rrweb_dev'
@@ -22,8 +17,6 @@ node {
         }
     }
     stage('run') {
-        docker.withRegistry('https://gitea.caffeinatedope.com/') {
-            docker.image("jenkins/rrweb_dev:${env.BUILD_ID}").run("-p 1289:3000 --name rrweb_dev -d --rm -e ORIGIN=https://dev.ravenrobotics.org")
-        }
+           app.run("-p 1289:3000 --name rrweb_dev -d --rm -e ORIGIN=https://dev.ravenrobotics.org")
     }
 }
