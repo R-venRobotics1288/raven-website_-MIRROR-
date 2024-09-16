@@ -86,6 +86,17 @@
         margin: 10px;
         padding: 10px;
     }
+    :global(body.light) .title-text{
+        display: flex;
+        flex-shrink: 0;
+        background-color: #652d92;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+    }
+    :global(body.light) h1{
+        color: white;
+    }
     h1 {
         margin: 0;
         padding: 0;

@@ -11,13 +11,7 @@
             <a href="/socials" class="nav-child-text">Socials</a>
         </div>
         <div class="nav-child">
-            <a href="/tmp" class="nav-child-text">tmp</a>
-        </div>
-        <div class="nav-child">
-            <a href="/tmp" class="nav-child-text">tmp</a>
-        </div>
-        <div class="nav-child">
-            <a href="/tmp" class="nav-child-text">tmp</a>
+            <a href="/sponsor" class="nav-child-text">Sponsor us!</a>
         </div>
     </div>
 </div>
@@ -50,7 +44,7 @@
         display: none;
     }
     .nav {  
-        width: 50%;
+        width: 30%;
         display: flex;
         position: absolute;
         right: 0;
