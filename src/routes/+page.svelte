@@ -19,6 +19,10 @@
             <div class="text_left">lorem ipsum dolor amit somethign somwthing something something ;djfn lasjdfnl nasfdakjsdfasn asdfkjskfn asldf</div>
             <div class="image_right"><enhanced:img src='$lib/assets/IMG_3582.jpg' alt='tmp logo' class="images"/></div>
         </div>
+        <div class="box">
+            <div class="image_left"><enhanced:img src='$lib/assets/IMG_3829.jpg' alt='tmp logo' class="images"/></div>
+            <div class="text_right">lorem ipsum dolor amit somethign somwthing something something ;djfn lasjdfnl nasfdakjsdfasn asdfkjskfn asldf</div>
+        </div>
     </div>
 </body>
 <style>
@@ -70,7 +74,7 @@
         width: 100%;
         font-size: 30pt;
         margin: 0px;
-        background-image: url('$lib/assets/IMG_3788.jpg');
+        background-image: url('$lib/assets/IMG_3788.webp');
         background-attachment: fixed;
         background-size: auto;
             background-size: 100%;

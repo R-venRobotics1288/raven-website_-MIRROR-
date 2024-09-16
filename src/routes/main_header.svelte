@@ -8,7 +8,7 @@
     <a href="/"><img src={dark_raven} alt="Dark Raven Robotics logo" width="100px" class="dark_raven"/></a>
     <div class="nav">
         <div class="nav-child">
-            <a href="/tmp" class="nav-child-text">tmp</a>
+            <a href="/socials" class="nav-child-text">Socials</a>
         </div>
         <div class="nav-child">
             <a href="/tmp" class="nav-child-text">tmp</a>
