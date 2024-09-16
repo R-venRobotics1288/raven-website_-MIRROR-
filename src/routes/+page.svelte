@@ -20,7 +20,7 @@
             <div class="image_right"><enhanced:img src='$lib/assets/IMG_3582.jpg' alt='tmp logo' class="images"/></div>
         </div>
         <div class="box">
-            <div class="image_left"><enhanced:img src='$lib/assets/IMG_3829.jpg' alt='tmp logo' class="images"/></div>
+            <div class="image_left"><enhanced:img src='$lib/assets/IMG_3542.jpg' alt='tmp logo' class="images"/></div>
             <div class="text_right">lorem ipsum dolor amit somethign somwthing something something ;djfn lasjdfnl nasfdakjsdfasn asdfkjskfn asldf</div>
         </div>
     </div>
