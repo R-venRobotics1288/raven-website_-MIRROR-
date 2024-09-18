@@ -1,7 +1,7 @@
 <div class="styled_paragraph"/>
 <style>
     :global(body.dark) {
-        background-color: #0f0f0f;
+        background-color: #202020;
         color: #9966cc;
         margin: 0%;
         padding: 0%;

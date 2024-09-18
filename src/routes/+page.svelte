@@ -10,7 +10,7 @@
             <h1>We are Raven Robotics</h1>
         </div>
     </div>
-    <div style="padding: 15px;">
+    <div style="padding: 25px;">
         <div class="box">
             <div class="image_left"><enhanced:img src='$lib/assets/IMG_3829.jpg' alt='tmp logo' class="images"/></div>
             <div class="text_right"><p class="blurb">
@@ -49,14 +49,14 @@
         display: flex;
         float: left;
         object-fit: none;
-        padding: 15px;
+        padding: 25px;
     }
     .image_right {
         width: 70%;
         display: flex;
         float: right;
         object-fit: none;
-        padding: 15px;
+        padding: 25px;
 
     }
     .text_left {
@@ -67,7 +67,7 @@
         float: left;
         display: flex;
         flex-grow: 1;
-        padding: 15px;
+        padding: 25px;
     }
     .text_right {
         margin: 0%;
@@ -77,7 +77,7 @@
         float: right;
         display: flex;
         flex-grow: 1;
-        padding: 15px;
+        padding: 25px;
     }
     .blurb {
         font-size: 18pt;
@@ -88,9 +88,10 @@
         justify-content: center;
         display: flex;
         align-items: center;
-        height: 100vh;
-        width: 100%;
+        width: 100vw;
+        height: auto;
         font-size: 30pt;
+        aspect-ratio: 20 / 9;
         margin: 0px;
         background-image: url('$lib/assets/IMG_3788.webp');
         background-attachment: fixed;
@@ -100,7 +101,7 @@
     :global(body.dark) .title-text{
         display: flex;
         flex-shrink: 0;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 80%);
         margin: 10px;
         padding: 10px;
         justify-content: center;
@@ -119,5 +120,6 @@
     h1 {
         margin: 0;
         padding: 0;
+        opacity: 100%;
     }
 </style>
