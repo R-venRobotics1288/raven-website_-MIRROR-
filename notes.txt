@@ -1,1 +1,2 @@
 possible site to use for qr codes: https://hughchen.github.io/qr_image/
+https://github.com/x-hw/amazing-qr
