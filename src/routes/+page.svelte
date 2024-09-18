@@ -10,18 +10,24 @@
             <h1>We are Raven Robotics</h1>
         </div>
     </div>
-    <div style="margin: 3%;">
+    <div style="padding: 15px;">
         <div class="box">
             <div class="image_left"><enhanced:img src='$lib/assets/IMG_3829.jpg' alt='tmp logo' class="images"/></div>
-            <div class="text_right">We are Raven Robotics, an FRC team that is located at Francis Howell High in St. Charles, Missouri. We have been competing for over 20 years and continue to grow each season</div>
+            <div class="text_right"><p class="blurb">
+                We are Raven Robotics, an FRC team that is located at Francis Howell High in St. Charles, Missouri. We have been competing for over 20 years and continue to grow each season.
+            </p></div>
         </div>
         <div class="box">
-            <div class="text_left">While our main mission is to create a robot to compete in each FRC season, our goal at Raven Robotics is to expand students knowledge of engineering, teamwork, and communication in order to create future leaders in the engineering field. We focus on three main components in the engineering field when building our robots: mechanical, electrical, and programming.</div>
+            <div class="text_left"><p class="blurb">
+                Our main mission is to create a robot to compete in each FRC season, our goal at Raven Robotics is to expand students knowledge of engineering, teamwork, and communication in order to create future leaders in the engineering field. We focus on three main components in the engineering field when building our robots: mechanical, electrical, and programming.
+            </p></div>
             <div class="image_right"><enhanced:img src='$lib/assets/IMG_3582.jpg' alt='tmp logo' class="images"/></div>
         </div>
         <div class="box">
             <div class="image_left"><enhanced:img src='$lib/assets/IMG_3542.jpg' alt='tmp logo' class="images"/></div>
-            <div class="text_right">Raven Robotics has had many successes throughout our 20 years of operating. We have won 16 rewards, and competed at FRC World Championship 5 times. In the 2024 FRC season, our team got 1st place at the St. Louis regionals event and got 13th in our division at the 2024 FRC World Championship.</div>
+            <div class="text_right"><p class="blurb">
+                Raven Robotics has had many successes throughout our 20 years of operating. We have won 16 awards, and competed at FRC World Championship 5 times. In the 2024 FRC season, our team got 1st place at the St. Louis regionals event and got 13th in our division at the 2024 FRC World Championship.
+            </p></div>
         </div>
     </div>
 </body>
@@ -43,30 +49,40 @@
         display: flex;
         float: left;
         object-fit: none;
+        padding: 15px;
     }
     .image_right {
         width: 70%;
         display: flex;
         float: right;
         object-fit: none;
+        padding: 15px;
+
     }
     .text_left {
-        margin: 3%;
+        margin: 0%;
         width: 30%;
         justify-content: center;
         align-items: center;
         float: left;
         display: flex;
         flex-grow: 1;
+        padding: 15px;
     }
     .text_right {
-        margin: 3%;
+        margin: 0%;
         width: 30%;
         justify-content: center;
         align-items: center;
         float: right;
         display: flex;
         flex-grow: 1;
+        padding: 15px;
+    }
+    .blurb {
+        font-size: 18pt;
+        justify-content: center;
+        text-align: center;
     }
     .title {
         justify-content: center;
@@ -79,7 +95,7 @@
         background-image: url('$lib/assets/IMG_3788.webp');
         background-attachment: fixed;
         background-size: auto;
-            background-size: 100%;
+        background-size: 100%;
     }
     :global(body.dark) .title-text{
         display: flex;
@@ -87,6 +103,7 @@
         background-color: black;
         margin: 10px;
         padding: 10px;
+        justify-content: center;
     }
     :global(body.light) .title-text{
         display: flex;
