@@ -48,6 +48,7 @@
         display: flex;
         position: absolute;
         right: 0;
+        min-width: 300px
     }
     .nav-child {
         justify-content: center;

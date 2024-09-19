@@ -10,7 +10,7 @@
             <h1>We are Raven Robotics</h1>
         </div>
     </div>
-    <div style="padding: 25px;">
+    <div class="enclosure">
         <div class="box">
             <div class="image_left"><enhanced:img src='$lib/assets/IMG_3829.jpg' alt='tmp logo' class="images"/></div>
             <div class="text_right"><p class="blurb">
@@ -32,10 +32,19 @@
     </div>
 </body>
 <style>
+    .enclosure {
+        width: 100%;
+        display: flex;
+        flex-grow: 0;
+        flex-direction: column;
+    }
     .box {
         display: flex;
         width: 100%;
         flex-grow: 0;
+        max-width: 100vw;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
     .images {
         height: auto;
@@ -80,7 +89,7 @@
         padding: 25px;
     }
     .blurb {
-        font-size: 18pt;
+        font-size: 1vmax;
         justify-content: center;
         text-align: center;
     }
@@ -90,7 +99,7 @@
         align-items: center;
         width: 100vw;
         height: auto;
-        font-size: 30pt;
+        font-size: 3.5vw;
         aspect-ratio: 20 / 9;
         margin: 0px;
         background-image: url('$lib/assets/IMG_3788.webp');
