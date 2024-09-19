@@ -5,5 +5,5 @@
 
 <body>
     <Main_Header/>
-    <embed src="/sponsorpacket.pdf" width="100%" type="application/pdf" height="500px"/>
+    <embed src="/sponsorpacket.pdf" style="width: 100vw; height: 85vh;" type="application/pdf"/>
 </body>
