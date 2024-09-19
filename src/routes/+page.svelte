@@ -42,8 +42,6 @@
         display: flex;
         width: 100%;
         flex-grow: 0;
-        max-width: 100vw;
-        flex-wrap: wrap;
         flex-direction: row;
     }
     .images {
@@ -66,7 +64,6 @@
         float: right;
         object-fit: none;
         padding: 25px;
-
     }
     .text_left {
         margin: 0%;
@@ -89,7 +86,7 @@
         padding: 25px;
     }
     .blurb {
-        font-size: 1vmax;
+        font-size: 1.5vmax;
         justify-content: center;
         text-align: center;
     }
