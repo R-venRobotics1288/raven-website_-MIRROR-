@@ -5,5 +5,5 @@
 
 <body>
     <Main_Header/>
-    Sponsor info coming soon
+    <embed src="/sponsorpacket.pdf" width="100%" type="application/pdf" height="500px"/>
 </body>

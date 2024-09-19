@@ -115,7 +115,7 @@
     :global(body.light) .title-text{
         display: flex;
         flex-shrink: 0;
-        background-color: #652d92;
+        background-color: rgba(101, 45, 146, 80%);
         color: white;
         margin: 10px;
         padding: 10px;
