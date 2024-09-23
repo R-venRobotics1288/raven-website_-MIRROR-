@@ -16,7 +16,14 @@ node {
             echo "container not running"
         }
     }
+    stage('remove prev') {
+        try {
+            sh 'docker rm rrweb'
+        } catch(err) {
+            echo 'container does not exist'
+        }
+    }
     stage('run') {
-           app.run("-p 1288:3000 --name rrweb -d --rm -e ORIGIN=https://ravenrobotics.org")
+           app.run("-p 1288:3000 --name rrweb -d --restart unless-stopped -e ORIGIN=https://ravenrobotics.org")
     }
 }
