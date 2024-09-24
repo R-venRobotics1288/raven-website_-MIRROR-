@@ -33,7 +33,9 @@
 </body>
 <style>
     .enclosure {
-        width: 100%;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
         display: flex;
         flex-grow: 0;
         flex-direction: column;
@@ -89,7 +91,7 @@
         align-items: center;
         width: 100vw;
         height: auto;
-        font-size: 3.5vw;
+        font-size: 3.25vw;
         aspect-ratio: 20 / 9;
         margin: 0px;
         background-image: url('$lib/assets/IMG_3788.webp');
