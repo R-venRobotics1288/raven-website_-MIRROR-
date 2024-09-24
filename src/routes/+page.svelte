@@ -12,20 +12,20 @@
     </div>
     <div class="enclosure">
         <div class="box">
-            <div class="image_left"><enhanced:img src='$lib/assets/IMG_3829.jpg' alt='tmp logo' class="images"/></div>
-            <div class="text_right"><p class="blurb">
+            <div class="image"><enhanced:img src='$lib/assets/IMG_3829.jpg' alt='tmp logo' class="images"/></div>
+            <div class="textbox"><p class="blurb">
                 We are Raven Robotics, an FRC team that is located at Francis Howell High in St. Charles, Missouri. We have been competing for over 20 years and continue to grow each season.
             </p></div>
         </div>
-        <div class="box">
-            <div class="text_left"><p class="blurb">
+        <div class="box-rev">
+            <div class="textbox"><p class="blurb">
                 Our main mission is to create a robot to compete in each FRC season, our goal at Raven Robotics is to expand students knowledge of engineering, teamwork, and communication in order to create future leaders in the engineering field. We focus on three main components in the engineering field when building our robots: mechanical, electrical, and programming.
             </p></div>
-            <div class="image_right"><enhanced:img src='$lib/assets/IMG_3582.jpg' alt='tmp logo' class="images"/></div>
+            <div class="image"><enhanced:img src='$lib/assets/IMG_3582.jpg' alt='tmp logo' class="images"/></div>
         </div>
         <div class="box">
-            <div class="image_left"><enhanced:img src='$lib/assets/IMG_3542.jpg' alt='tmp logo' class="images"/></div>
-            <div class="text_right"><p class="blurb">
+            <div class="image"><enhanced:img src='$lib/assets/IMG_3542.jpg' alt='tmp logo' class="images"/></div>
+            <div class="textbox"><p class="blurb">
                 Raven Robotics has had many successes throughout our 20 years of operating. We have won 16 awards, and competed at FRC World Championship 5 times. In the 2024 FRC season, our team got 1st place at the St. Louis regionals event and got 13th in our division at the 2024 FRC World Championship.
             </p></div>
         </div>
@@ -43,6 +43,14 @@
         width: 100%;
         flex-grow: 0;
         flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .box-rev {
+        display: flex;
+        width: 100%;
+        flex-grow: 0;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
     }
     .images {
         height: auto;
@@ -51,39 +59,24 @@
         resize: both;
         display: block;
     }
-    .image_left {
-        width: 70%;
+    .image {
         display: flex;
-        float: left;
-        object-fit: none;
         padding: 25px;
+        flex-shrink: 2;
+        width: 0px;
+        flex-grow: 2;
+        min-width: 60vmax;
     }
-    .image_right {
-        width: 70%;
-        display: flex;
-        float: right;
-        object-fit: none;
-        padding: 25px;
-    }
-    .text_left {
+    .textbox {
         margin: 0%;
-        width: 30%;
         justify-content: center;
         align-items: center;
-        float: left;
         display: flex;
-        flex-grow: 1;
         padding: 25px;
-    }
-    .text_right {
-        margin: 0%;
-        width: 30%;
-        justify-content: center;
-        align-items: center;
-        float: right;
-        display: flex;
+        width: 0px;
         flex-grow: 1;
-        padding: 25px;
+        flex-shrink: 1;
+        min-width: 30vmax;
     }
     .blurb {
         font-size: 1.5vmax;
