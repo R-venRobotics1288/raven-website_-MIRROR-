@@ -65,7 +65,7 @@
         flex-shrink: 2;
         width: 0px;
         flex-grow: 2;
-        min-width: 60vmax;
+        min-width: 60vw;
     }
     .textbox {
         margin: 0%;
