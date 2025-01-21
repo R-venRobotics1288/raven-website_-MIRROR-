@@ -24,6 +24,7 @@
         margin: 0%;
         position: sticky;
         align-items: center;    
+        width: 100vw;
     }
     :global(body.dark) .custom_header{
         background-color: black;
