@@ -13,7 +13,11 @@
             <a href="https://www.youtube.com/@RavenRobotics"><img src={dark_yt} alt="Dark Raven Robotics logo" width="300px" class="dark_yt"/></a>
         </div>
     </div>
-    https://www.instagram.com/raven.robotics/
+    <div class="insta">
+        <a href="https://www.instagram.com/raven.robotics/">
+            <enhanced:img src='$lib/assets/IMG_8876.jpg' alt='Instagram' sizes="(min-width:1920px) 640px"/>
+        </a>
+    </div>
     (better social display coming soon)
 </body>
 
@@ -36,5 +40,8 @@
         display: flex;
         justify-content: center;
         width: 100%;
+    }
+    .insta{
+        width: 50vw;
     }
 </style>
