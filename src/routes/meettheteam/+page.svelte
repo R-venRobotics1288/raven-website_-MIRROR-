@@ -10,41 +10,41 @@
     import image6 from '$lib/assets/info_cards/7sean.png';
     import image7 from '$lib/assets/info_cards/8rileigh.png';
     import image8 from '$lib/assets/info_cards/9alex.png';
-    import imageOther from '$lib/assets/info_cards/ravenOfficers2025.png'
+    import imageOther from '$lib/assets/info_cards/ravenOfficers2025.png';
 </script>
 
 <body>
     <MainHeader/>
     <div class="card">
         <div class="cardChild">
-            <img src={image0} alt="Emilaine's card"/>
+            <enhanced:img src='$lib/assets/info_cards/1emelaine.png' alt="Emilaine's card"/>
         </div>
         <div class="cardChild">
-            <img src={image1} alt="Mason's card"/>
+            <enhanced:img src='$lib/assets/info_cards/2mason.png' alt="Mason's card"/>
         </div>
         <div class="cardChild">
-            <img src={image2} alt="Joel's card"/>
+            <enhanced:img src='$lib/assets/info_cards/3joel.png' alt="Joel's card"/>
         </div>
         <div class="cardChild">
-            <img src={image3} alt="Aaron's card"/>
+            <enhanced:img src='$lib/assets/info_cards/4aaron.png' alt="Aaron's card"/>
         </div>
         <div class="cardChild">
-            <img src={image4} alt="Rishabh's card"/>
+            <enhanced:img src='$lib/assets/info_cards/5rishabh.png' alt="Rishabh's card"/>
         </div>
         <div class="cardChild">
-            <img src={image5} alt="Nirmaha's card"/>
+            <enhanced:img src='$lib/assets/info_cards/6nirmaha.png' alt="Nirmaha's card"/>
         </div>
         <div class="cardChild">
-            <img src={image6} alt="Sean's card"/>
+            <enhanced:img src='$lib/assets/info_cards/7sean.png' alt="Sean's card"/>
         </div>
         <div class="cardChild">
-            <img src={image7} alt="Rileigh's card"/>
+            <enhanced:img src='$lib/assets/info_cards/8rileigh.png' alt="Rileigh's card"/>
         </div>
         <div class="cardChild">
-            <img src={image8} alt="Alex's card"/>
+            <enhanced:img src='$lib/assets/info_cards/9alex.png' alt="Alex's card"/>
         </div>
         <div class="cardChild">
-            <img src={imageOther} alt="Everyone else's card"/>
+            <enhanced:img src='$lib/assets/info_cards/ravenOfficers2025.png' alt="Everyone else's card"/>
         </div>
     </div>
 </body>
@@ -61,12 +61,13 @@
         align-content: center;
         display: flex;
         margin: 0%;
-        padding: 0%;
-        width: 32%;
+        max-width: 32vw;
         padding: 0.5%;
+        aspect-ratio: 1720 / 2020;
+        max-height  : auto;
     }
     img {
-        width: 100%;
-        border-radius: 3%;
+        width: 32vw;
+        height: auto;
     }
 </style>
