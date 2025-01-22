@@ -69,5 +69,6 @@
     img {
         width: 32vw;
         height: auto;
+        border-radius: 4%;
     }
 </style>
