@@ -11,6 +11,9 @@
             <a href="/socials" class="nav-child-text">Socials</a>
         </div>
         <div class="nav-child">
+            <a href="/meettheteam" class="nav-child-text">Meet The Team!</a>
+        </div>
+        <div class="nav-child">
             <a href="/sponsor" class="nav-child-text">Sponsor us!</a>
         </div>
     </div>
