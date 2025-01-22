@@ -10,7 +10,7 @@
     import image6 from '$lib/assets/info_cards/7sean.png';
     import image7 from '$lib/assets/info_cards/8rileigh.png';
     import image8 from '$lib/assets/info_cards/9alex.png';
-    import other from '$lib/assets/info_cards/ravenOfficers2025.png'
+    import imageOther from '$lib/assets/info_cards/ravenOfficers2025.png'
 </script>
 
 <body>
@@ -44,7 +44,7 @@
             <img src={image8} alt="Alex's card"/>
         </div>
         <div class="cardChild">
-            <img src={other} alt="Everyone else's card"/>
+            <img src={imageOther} alt="Everyone else's card"/>
         </div>
     </div>
 </body>
