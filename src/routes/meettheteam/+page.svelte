@@ -1,16 +1,5 @@
 <script>
     import MainHeader from '../main_header.svelte';
-    import Styling from '../styling.svelte';
-    import image0 from '$lib/assets/info_cards/1emelaine.png';
-    import image1 from '$lib/assets/info_cards/2mason.png';
-    import image2 from '$lib/assets/info_cards/3joel.png';
-    import image3 from '$lib/assets/info_cards/4aaron.png';
-    import image4 from '$lib/assets/info_cards/5rishabh.png';
-    import image5 from '$lib/assets/info_cards/6nirmaha.png';
-    import image6 from '$lib/assets/info_cards/7sean.png';
-    import image7 from '$lib/assets/info_cards/8rileigh.png';
-    import image8 from '$lib/assets/info_cards/9alex.png';
-    import imageOther from '$lib/assets/info_cards/ravenOfficers2025.png';
 </script>
 
 <body>
