@@ -2,8 +2,8 @@
     import MainHeader from '../main_header.svelte';
 </script>
 
+<MainHeader/>
 <body>
-    <MainHeader/>
     <div class="card">
         <div class="cardChild">
             <enhanced:img src='$lib/assets/info_cards/1emelaine.png' alt="Emilaine's card"/>

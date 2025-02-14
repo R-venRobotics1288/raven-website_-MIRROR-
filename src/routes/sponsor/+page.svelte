@@ -3,7 +3,7 @@
     import Styling from '../styling.svelte';
 </script>
 
+<Main_Header/>
 <body>
-    <Main_Header/>
     <embed src="/sponsorpacket.pdf" style="width: 100vw; height: 85vh;" type="application/pdf"/>
 </body>
