@@ -3,74 +3,61 @@
 </script>
 
 <MainHeader />
-<div class="card">
-  <div class="cardChild">
-    <enhanced:img
-      src="$lib/assets/info_cards/1emelaine.png"
-      alt="Emilaine's card"
-    />
+<div class="card-container">
+  <div class="card">
+    <enhanced:img src="$lib/assets/info_cards/1emelaine.png" alt="Emilaine's card"  />
   </div>
-  <div class="cardChild">
+  <div class="card">
     <enhanced:img src="$lib/assets/info_cards/2mason.png" alt="Mason's card" />
   </div>
-  <div class="cardChild">
+  <div class="card">
     <enhanced:img src="$lib/assets/info_cards/3joel.png" alt="Joel's card" />
   </div>
-  <div class="cardChild">
+  <div class="card">
     <enhanced:img src="$lib/assets/info_cards/4aaron.png" alt="Aaron's card" />
   </div>
-  <div class="cardChild">
-    <enhanced:img
-      src="$lib/assets/info_cards/5rishabh.png"
-      alt="Rishabh's card"
-    />
+  <div class="card">
+    <enhanced:img src="$lib/assets/info_cards/5rishabh.png" alt="Rishabh's card" />
   </div>
-  <div class="cardChild">
-    <enhanced:img
-      src="$lib/assets/info_cards/6nirmaha.png"
-      alt="Nirmaha's card"
-    />
+  <div class="card">
+    <enhanced:img src="$lib/assets/info_cards/6nirmaha.png" alt="Nirmaha's card" />
   </div>
-  <div class="cardChild">
+  <div class="card">
     <enhanced:img src="$lib/assets/info_cards/7sean.png" alt="Sean's card" />
   </div>
-  <div class="cardChild">
-    <enhanced:img
-      src="$lib/assets/info_cards/8rileigh.png"
-      alt="Rileigh's card"
-    />
+  <div class="card">
+    <enhanced:img src="$lib/assets/info_cards/8rileigh.png" alt="Rileigh's card" />
   </div>
-  <div class="cardChild">
+  <div class="card">
     <enhanced:img src="$lib/assets/info_cards/9alex.png" alt="Alex's card" />
   </div>
-  <div class="cardChild">
-    <enhanced:img
-      src="$lib/assets/info_cards/ravenOfficers2025.png"
-      alt="Everyone else's card"
-    />
+  <div class="card">
+    <enhanced:img src="$lib/assets/info_cards/ravenOfficers2025.png" alt="Everyone else's card" />
   </div>
 </div>
 
 <style>
-  .card {
+  .card-container {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
     width: 100vw;
     justify-content: center;
+		flex-basis: content;
   }
-  .cardChild {
-    align-content: center;
-    display: flex;
-    margin: 0%;
-    max-width: 32vw;
-    padding: 0.5%;
-    aspect-ratio: 1720 / 2020;
-    max-height: auto;
+  .card {
+		display: flex;
+    width: 0px;
+    flex-grow: 1;
+		flex-shrink: 1;
+    min-width: 25vmax;
+		padding: 0.25vmax;
   }
   img {
-    width: 32vw;
-    height: auto;
-    border-radius: 4%;
+		height: auto;
+    width: 100%;
+    aspect-ratio: keep;
+    resize: both;
+    display: block;
+		border-radius: 2vmin;
   }
 </style>

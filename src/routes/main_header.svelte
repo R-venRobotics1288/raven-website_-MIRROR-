@@ -70,15 +70,16 @@
     }
   }
   .nav {
-    width: 30%;
+    width: 60%;
     display: flex;
     position: absolute;
+		float: right;
     right: 0;
     min-width: 300px;
-  }
+		justify-content: right;
+	 }
   .nav-child {
-    justify-content: center;
-    flex-grow: 1;
+		margin: 5%;
     display: flex;
     color: inherit;
     text-decoration: none;
@@ -87,5 +88,7 @@
     text-decoration: none;
     color: inherit;
     font-size: 14pt;
+		height: 14pt;
+		white-space: nowrap;
   }
 </style>
