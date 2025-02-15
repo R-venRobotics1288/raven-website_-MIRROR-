@@ -4,37 +4,32 @@
 </script>
 
 <Main_Header />
-<body>
-  <div class="socials">
-    <div class="yt">
-      <!-- svelte-ignore a11y_consider_explicit_label -->
-      <a href="https://www.youtube.com/@RavenRobotics"
-        ><enhanced:img
-          src="../../lib/assets/yt_logo_rgb_light.png"
-          alt="Light Raven Robotics logo"
-          class="light_yt"
-        /></a
-      >
-      <!-- svelte-ignore a11y_consider_explicit_label -->
-      <a href="https://www.youtube.com/@RavenRobotics"
-        ><enhanced:img
-          src="../../lib/assets/yt_logo_rgb_dark.png"
-          alt="Dark Raven Robotics logo"
-          class="dark_yt"
-        /></a
-      >
-    </div>
-    <div class="insta">
-      <!-- svelte-ignore a11y_consider_explicit_label -->
-      <a href="https://www.instagram.com/raven.robotics/">
-        <enhanced:img
-          src="../../lib/assets/IMG_8876.jpg"
-          alt="Instagram"
-        />
-      </a>
-    </div>
+<div class="socials">
+  <div class="yt">
+    <!-- svelte-ignore a11y_consider_explicit_label -->
+    <a href="https://www.youtube.com/@RavenRobotics"
+      ><enhanced:img
+        src="../../lib/assets/yt_logo_rgb_light.png"
+        alt="Light Raven Robotics logo"
+        class="light_yt"
+      /></a
+    >
+    <!-- svelte-ignore a11y_consider_explicit_label -->
+    <a href="https://www.youtube.com/@RavenRobotics"
+      ><enhanced:img
+        src="../../lib/assets/yt_logo_rgb_dark.png"
+        alt="Dark Raven Robotics logo"
+        class="dark_yt"
+      /></a
+    >
   </div>
-</body>
+  <div class="insta">
+    <!-- svelte-ignore a11y_consider_explicit_label -->
+    <a href="https://www.instagram.com/raven.robotics/">
+      <enhanced:img src="../../lib/assets/IMG_8876.jpg" alt="Instagram" />
+    </a>
+  </div>
+</div>
 
 <style>
   @media (prefers-color-scheme: light) {
@@ -47,10 +42,10 @@
       display: none;
     }
   }
-	img {
-		width: 100%;
-		height: auto;
-	}
+  img {
+    width: 100%;
+    height: auto;
+  }
   .socials {
     display: flex;
     flex-shrink: 0;

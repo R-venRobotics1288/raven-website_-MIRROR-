@@ -11,8 +11,7 @@
 	/>
 </div>
 <Main_Header />
-<body>
-  <div class="title">
+  <div class="title-box">
     <div class="title-text">
       <h1>We are Raven Robotics</h1>
     </div>
@@ -72,7 +71,6 @@
       </div>
     </div>
   </div>
-</body>
 
 <style>
 	.hero {
@@ -91,7 +89,7 @@
     width: 100vw;
 		z-index: -100;
 	}
-	.title {
+	.title-box {
 		justify-content: center;
 		display: flex;
 		align-items: center;

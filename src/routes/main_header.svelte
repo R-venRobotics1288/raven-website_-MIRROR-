@@ -2,37 +2,35 @@
   import Styling from "./styling.svelte";
 </script>
 
-<body>
-  <div class="custom_header">
-    <!-- svelte-ignore a11y_consider_explicit_label -->
-    <a href="/"
-      ><enhanced:img
-        src="../lib/assets/raven_light.png"
-        alt="Light Raven Robotics logo"
-        class="light_raven"
-      /></a
-    >
-    <!-- svelte-ignore a11y_consider_explicit_label -->
-    <a href="/"
-      ><enhanced:img
-        src="../lib/assets/raven_dark.png"
-        alt="Dark Raven Robotics logo"
-        class="dark_raven"
-      /></a
-    >
-    <div class="nav">
-      <div class="nav-child">
-        <a href="/socials" class="nav-child-text">Socials</a>
-      </div>
-      <div class="nav-child">
-        <a href="/meettheteam" class="nav-child-text">Meet The Team!</a>
-      </div>
-      <div class="nav-child">
-        <a href="/sponsor" class="nav-child-text">Sponsor us!</a>
-      </div>
+<div class="custom_header">
+  <!-- svelte-ignore a11y_consider_explicit_label -->
+  <a href="/"
+    ><enhanced:img
+      src="../lib/assets/raven_light.png"
+      alt="Light Raven Robotics logo"
+      class="light_raven"
+    /></a
+  >
+  <!-- svelte-ignore a11y_consider_explicit_label -->
+  <a href="/"
+    ><enhanced:img
+      src="../lib/assets/raven_dark.png"
+      alt="Dark Raven Robotics logo"
+      class="dark_raven"
+    /></a
+  >
+  <div class="nav">
+    <div class="nav-child">
+      <a href="/socials" class="nav-child-text">Socials</a>
+    </div>
+    <div class="nav-child">
+      <a href="/meettheteam" class="nav-child-text">Meet The Team!</a>
+    </div>
+    <div class="nav-child">
+      <a href="/sponsor" class="nav-child-text">Sponsor us!</a>
     </div>
   </div>
-</body>
+</div>
 
 <style>
   .custom_header {
@@ -43,15 +41,15 @@
     position: sticky;
     align-items: center;
     width: 100vw;
-		z-index: 20;
+    z-index: 20;
   }
   img {
     display: block;
     float: left;
     margin: 10px;
     width: 100px;
-		aspect-ratio: initial;
-		height: auto;
+    aspect-ratio: initial;
+    height: auto;
   }
   @media (prefers-color-scheme: dark) {
     .custom_header {
