@@ -43,6 +43,7 @@
     position: sticky;
     align-items: center;
     width: 100vw;
+		z-index: 20;
   }
   img {
     display: block;

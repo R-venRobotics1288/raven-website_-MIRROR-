@@ -3,6 +3,13 @@
   import Main_Header from "./main_header.svelte";
 </script>
 
+<div class="hero_container">
+	<enhanced:img
+	src="/src/lib/assets/IMG_3788.jpg"
+	alt="hero shot"
+	class="hero"
+	/>
+</div>
 <Main_Header />
 <body>
   <div class="title">
@@ -10,7 +17,7 @@
       <h1>We are Raven Robotics</h1>
     </div>
   </div>
-  <div class="enclosure">
+  <div class="enclosure with_bg">
     <div class="box">
       <div class="image">
         <enhanced:img
@@ -68,6 +75,58 @@
 </body>
 
 <style>
+	.hero {
+		width: 100vw;
+		height: max-content;
+		position: absolute;
+		top:0;
+	}
+	.hero_container {
+		position: sticky;
+		top: 0;
+    display: flex;
+    padding: 0;
+    margin: 0%;
+    align-items: center;
+    width: 100vw;
+		z-index: -100;
+	}
+	.title {
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		width: 100vw;
+		font-size: 3.25vw;
+		aspect-ratio: 20 / 9;
+		margin: 0px;
+		height: auto;
+	}
+	.title-text {
+      display: flex;
+      flex-shrink: 0;
+      margin: 10px;
+      padding: 10px;
+			justify-content: center;
+    }
+  @media (prefers-color-scheme: dark) {
+    .title-text {
+      background-color: rgba(0, 0, 0, 80%);
+    }
+  }
+  @media (prefers-color-scheme: light) {
+    .title-text {
+      background-color: rgba(101, 45, 146, 80%);
+      color: white;
+    }
+    h1 {
+      color: white;
+    }
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+    opacity: 100%;
+  }
   .enclosure {
     justify-content: center;
     align-items: center;
@@ -120,47 +179,5 @@
     font-size: 1.5vmax;
     justify-content: center;
     text-align: center;
-  }
-  .title {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    height: auto;
-    font-size: 3.25vw;
-    aspect-ratio: 20 / 9;
-    margin: 0px;
-    background-image: url("$lib/assets/IMG_3788.webp");
-    background-attachment: fixed;
-    background-size: auto;
-    background-size: 100%;
-  }
-  @media (prefers-color-scheme: dark) {
-    .title-text {
-      display: flex;
-      flex-shrink: 0;
-      background-color: rgba(0, 0, 0, 80%);
-      margin: 10px;
-      padding: 10px;
-      justify-content: center;
-    }
-  }
-  @media (prefers-color-scheme: light) {
-    .title-text {
-      display: flex;
-      flex-shrink: 0;
-      background-color: rgba(101, 45, 146, 80%);
-      color: white;
-      margin: 10px;
-      padding: 10px;
-    }
-    h1 {
-      color: white;
-    }
-  }
-  h1 {
-    margin: 0;
-    padding: 0;
-    opacity: 100%;
   }
 </style>
