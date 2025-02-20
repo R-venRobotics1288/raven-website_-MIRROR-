@@ -47,8 +47,8 @@
   .card {
 		display: flex;
     width: 0px;
-    flex-grow: 1;
-		flex-shrink: 1;
+    flex-grow: 0;
+		flex-shrink: 0;
     min-width: 25vmax;
 		padding: 0.25vmax;
   }
