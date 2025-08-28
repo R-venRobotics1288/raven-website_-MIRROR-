@@ -12,16 +12,17 @@
 <Main_Header />
 <div class="title-box">
   <div class="title-text">
-    <h1>We are Raven Robotics</h1>
+    <h1>Join Raven Robotics!</h1>
   </div>
+  <enhanced:img src="$lib/assets/flyer.png" class="flyer"/>
 </div>
 <div class="enclosure with_bg">
   <div class="box">
     <div class="image">
       <enhanced:img
-        src="$lib/assets/IMG_3829.jpg"
-        alt="tmp logo"
-        class="images" />
+      src="$lib/assets/IMG_3829.jpg"
+      alt="tmp logo"
+      class="images" />
     </div>
     <div class="textbox">
       <p class="blurb">
@@ -68,11 +69,21 @@
 </div>
 
 <style>
+  .flyer {
+    width: max-content;
+    height: 75vw;
+    object-position: center;
+    margin: auto;
+    place-items: center;
+  }
   .hero {
-    width: 100vw;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 50vw;
     height: max-content;
     position: absolute;
     top: 0;
+    justify-content: center;
   }
   .hero_container {
     position: sticky;
@@ -87,6 +98,7 @@
   .title-box {
     justify-content: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100vw;
     font-size: 3.25vw;
@@ -97,7 +109,7 @@
   .title-text {
     display: flex;
     flex-shrink: 0;
-    margin: 10px;
+    margin: 30px;
     padding: 10px;
     justify-content: center;
   }
