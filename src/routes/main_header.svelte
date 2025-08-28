@@ -4,21 +4,23 @@
 
 <div class="custom_header">
   <!-- svelte-ignore a11y_consider_explicit_label -->
-  <a href="/"
-    ><enhanced:img
-      src="../lib/assets/raven_light.png"
-      alt="Light Raven Robotics logo"
-      class="light_raven"
-    /></a
-  >
-  <!-- svelte-ignore a11y_consider_explicit_label -->
-  <a href="/"
-    ><enhanced:img
-      src="../lib/assets/raven_dark.png"
-      alt="Dark Raven Robotics logo"
-      class="dark_raven"
-    /></a
-  >
+  <div class="logo">
+     <a href="/"
+     ><enhanced:img
+     src="../lib/assets/raven_light.png"
+     alt="Light Raven Robotics logo"
+     class="light_raven"
+     /></a
+     >
+     <!-- svelte-ignore a11y_consider_explicit_label -->
+     <a href="/"
+     ><enhanced:img
+     src="../lib/assets/raven_dark.png"
+     alt="Dark Raven Robotics logo"
+     class="dark_raven"
+     /></a
+     >
+  </div>
   <div class="nav">
     <div class="nav-child">
       <a href="/socials" class="nav-child-text">Socials</a>
@@ -36,20 +38,26 @@
   .custom_header {
     top: 0;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: auto;
     padding: 0;
     margin: 0%;
     position: sticky;
     align-items: center;
+    justify-content: center;
     width: 100vw;
     z-index: 20;
   }
   img {
-    display: block;
-    float: left;
-    margin: 10px;
     width: 100px;
     aspect-ratio: initial;
     height: auto;
+  }
+  .logo {
+    display: flex;
+    width: 100px;
+    margin: 10px;
   }
   @media (prefers-color-scheme: dark) {
     .custom_header {
@@ -70,25 +78,19 @@
     }
   }
   .nav {
-    width: 60%;
+    width: max-content;
     display: flex;
-    position: absolute;
+    flex-wrap: wrap;
 		float: right;
-    right: 0;
-    min-width: 300px;
-		justify-content: right;
+    margin: 10px;
 	 }
-  .nav-child {
-		margin: 5%;
-    display: flex;
-    color: inherit;
-    text-decoration: none;
-  }
+
   .nav-child-text {
     text-decoration: none;
     color: inherit;
     font-size: 14pt;
 		height: 14pt;
 		white-space: nowrap;
+    margin: 10px;
   }
 </style>

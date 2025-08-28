@@ -79,7 +79,7 @@
   .hero {
     min-width: 100vw;
     min-height: 100vh;
-    width: 50vw;
+    width: max-content;
     height: max-content;
     position: absolute;
     top: 0;
