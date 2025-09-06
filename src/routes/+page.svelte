@@ -14,7 +14,6 @@
   <div class="title-text">
     <h1>Join Raven Robotics!</h1>
   </div>
-  <enhanced:img src="$lib/assets/flyer.png" class="flyer"/>
 </div>
 <div class="enclosure with_bg">
   <div class="box">

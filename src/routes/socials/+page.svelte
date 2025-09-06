@@ -26,7 +26,7 @@
   <div class="insta">
     <!-- svelte-ignore a11y_consider_explicit_label -->
     <a href="https://www.instagram.com/raven.robotics/">
-      <enhanced:img src="../../lib/assets/IMG_8876.jpg" alt="Instagram" />
+      <enhanced:img src="../../lib/assets/instagram.png" alt="Instagram" />
     </a>
   </div>
 </div>
